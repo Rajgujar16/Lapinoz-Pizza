@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Pinoz Pizza - Order Pizza Online</title>
+    <link rel="icon" href="./assests/logo-5-1600769708.png">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Linking to Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,121;1,121&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+           <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+<link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+        <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body>
+
+    <!-- Main Container -->
+    <div class="main-container">
+
+        <!-- Navigation Section -->
+        <div class="nav">
+            <i class="fa-solid fa-bars" id="menu-bar"></i>
+            <img src="./assests/lapinoz-logo.png" alt="Nav-logo">
+            <ul>
+                <li class="hide">Home</li>
+                <li class="hide">Order Online</li>
+                <li class="hide">Store Locator</li>
+                <li class="hide">Franchise Enquiry</li>
+                <li class="hide">Our Story</li>
+                <li class="hide">Contact Us</li>
+                <li><i class="nav-icon"></i>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Hero Section -->
+        <div class="hero-section">
+            <!-- Info Card -->
+            <div class="info-card">
+                <!-- Delivery and Pickup Tabs -->
+                <div class="delivery">
+                    <div class="delivery-tab">
+                        <h4><i class="fa-solid fa-person-biking" style="font-size: 10px;"></i>&nbsp Delivery</h4>
+                    </div>
+                    <div class="pickup-tab">
+                        <h4><i class="fa-solid fa-people-carry-box" style="font-size: 10px;"></i>&nbsp Pickup</h4>
+                    </div>
+                </div>
+
+                <!-- Heading -->
+                <p class="hero-sec-heading">Lets Get Ordering On
+                    La Pino'z Pizza</p>
+                <!-- Subheading -->
+                <h2 class="hero-sec-subheading" >Select Your Nearest Outlet</h2>
+
+                <!-- Delivery Selector -->
+                <span id="delivery-selector">
+                    <!-- Current Location Button -->
+                    <button id="curr-location">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-geo-alt"
+                            viewBox="0 0 16 16">
+                            <!-- SVG Path for Location Icon -->
+                            <path
+                                d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                        </svg>
+                        Use my current location
+                    </button>
+                    <!-- OR -->
+                    <h4 style="font-size:13px">OR</h4>
+                    <!-- Outlet Selector Buttons -->
+                    <span class="outlet-selector">
+                        <button id="sel-city">Select City<i class="fa-solid fa-caret-down"></i></button>
+                        <button id="sel-outlet">Select Outlet<i class="fa-solid fa-caret-down"></i></button>
+                    </span>
+                </span>
+            </div>
+        </div>
+
+        <!-- Coupon Container -->
+        <div class="coupon-container">
+            <!-- Heading -->
+            <h2 style="width: 100%;">Deals and Offers</h2>
+        <div class="slider">
+            <div class="slides">
+                <div class="slide"><img src="https://lapinozpizza.in/assets/wla_new/lapinoz/img/deals-banner-five.jpg" alt="Image 6"></div>
+                <div class="slide"><img src="https://lapinozpizza.in/assets/wla_new/lapinoz/img/deals-banner.jpg" alt="Image 1"></div>
+                <div class="slide"><img src="	https://lapinozpizza.in/assets/wla_new/lapinoz/img/deals-banner-two.jpg" alt="Image 2"></div>
+                <div class="slide"><img src="https://lapinozpizza.in/assets/wla_new/lapinoz/img/deals-banner-three.jpg" alt="Image 3"></div>
+                <div class="slide"><img src="https://lapinozpizza.in/assets/wla_new/lapinoz/img/deals-banner-four.jpg" alt="Image 4"></div>
+                <div class="slide"><img src="https://lapinozpizza.in/assets/wla_new/lapinoz/img/deals-banner-five.jpg" alt="Image 5"></div>
+                <div class="slide"><img src="https://lapinozpizza.in/assets/wla_new/lapinoz/img/deals-banner.jpg" alt="Image 1"></div>
+            </div>
+        </div>
+        </div>
+        
+        <!-- Carousel -->
+
+
+
+        <!-- Story Section -->
+        <div class="story-section">
+            <!-- Text Part -->
+            <div class="text-part">
+                <!-- Heading -->
+                <h2>About Us</h2>
+                <!-- Subheading -->
+                <h1>The Story of La Pino'z Pizza</h1>
+                <!-- Paragraph -->
+                <p class="paragraph">
+                    The story of India's fastest growing pizza place started back in 2011 when Sanam Kapoor opened his
+                    very first pizzeria in his hometown Chandigarh.
+                    Inspired by his own search for delicious pizza options, he started to wonder if there was a better
+                    way of doing pizza – and business. The last thing the world needed was another pizzeria, but maybe
+                    this one could be different and everyone could get exactly what they wanted, made fresh on demand.
+                    It all started sounding pretty great, and soon Sanam was opening the first La Pino'z in his hometown
+                    Chandigarh and there was no looking back. As of today, La Pino'z has 600+ outlets across India with
+                    the recent one opening in London.
+                </p>
+            </div>
+            <!-- Image Part -->
+            <div class="image-part">
+                <!-- Image of Owner -->
+                <div class="owner"></div>
+            </div>
+        </div>
+
+        <!-- Banner Section -->
+        <div class="banner-section">
+            <img src="./assests/coff-burger.png" alt="" class="hide">
+            <img src="https://static.uengage.in/uploads/5/image-955349-1709794368.jpeg" alt="" id="res-images">
+        </div>
+
+        <!-- Growth Section -->
+        <div class="growth">
+            <!-- Growth Chart -->
+            <div class="growth-chart">
+                <!-- Heading -->
+                <h1>
+                    <!-- Title -->
+                    <span style="color: #00572D;font-size: 26px;font-weight: 600; line-height: 31px;">La Pino'z
+                        Pizza</span> Growth Journey
+                </h1>
+                <!-- Growth Scale -->
+                <div class="growth-scale">
+                    <!-- List of Growth Milestones -->
+                    <ul>
+                        <!-- Milestone 1 -->
+                        <li>
+                            <div>
+                                <h4>2011</h4>
+                            </div>
+                            <!-- Timeline Icon -->
+                            <div style="margin-left: 4px;">
+                                <img src="https://lapinoz.ca/assets/wla_new/lapinoz/ca/images/timeline-one.svg"
+                                    alt="Timeline One" width="38" height="38">
+                            </div>
+                            <!-- Timeline Circle with Tooltip -->
+                            <div class="Timeline-circle">
+                                <span class="tooltip"></span>
+                                <p>Launched the 1st Outlet in Chandigarh</p>
+                            </div>
+                        </li>
+                        <!-- Milestone 2 -->
+                        <li>
+                            <div>
+                                <h4>2013</h4>
+                            </div>
+                            <div>
+                                <img src="./assests/timeline-two.svg" alt="Timeline One" width="38" height="38">
+                            </div>
+                            <div class="Timeline-circle">
+                                <span class="tooltip"></span>
+                                <p>Launched the 1st Franchise Outlet</p>
+                            </div>
+                        </li>
+                        <!-- Milestone 3 -->
+                        <li>
+                            <div>
+                                <h4>2017</h4>
+                            </div>
+                            <div>
+                                <img src="./assests/timeline-three.svg" alt="Timeline One" width="38" height="38">
+                            </div>
+                            <div class="Timeline-circle">
+                                <span class="tooltip"></span>
+                                <p>Crossed 100 Outlets All Over India</p>
+                            </div>
+                        </li>
+                        <!-- Milestone 4 -->
+                        <li>
+                            <div>
+                                <h4>2019</h4>
+                            </div>
+                            <div>
+                                <img src="./assests/timeline-four.svg" alt="Timeline One" width="38" height="38">
+                            </div>
+                            <div class="Timeline-circle">
+                                <span class="tooltip"></span>
+                                <p>Crossed 200 Outlets All Over India</p>
+                            </div>
+                        </li>
+                        <!-- Milestone 5 -->
+                        <li>
+                            <div>
+                                <h4>2021</h4>
+                            </div>
+                            <div>
+                                <img src="./assests/timeline-five.svg" alt="Timeline One" width="38" height="38">
+                            </div>
+                            <div class="Timeline-circle">
+                                <span class="tooltip"></span>
+                                <p>Crossed 300 Outlets All Over India</p>
+                            </div>
+                        </li>
+                        <!-- Milestone 6 -->
+                        <li>
+                            <div>
+                                <h4>2022</h4>
+                            </div>
+                            <div>
+                                <img src="./assests/timeline-six.svg" alt="Timeline One" width="40" height="40">
+                            </div>
+                            <div class="Timeline-circle">
+                                <span class="tooltip"></span>
+                                <p>La Pino’z Goes International</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Lines -->
+                <div class="lines"></div>
+            </div>
+
+            <!-- Pizza Section -->
+            <div class="pizza">
+                <!-- Scroll Container -->
+                <div class="scroll-container">
+                    <!-- Image of Rotating Pizza -->
+                    <img src="./assests/lapinonz-pizza-round-image.png" alt="Rotating Image" id="rotating-image">
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <!-- carousel 2 -->
+        <div class="slider-wrapper">
+            <h1 style="font-size: 26px; line-height: 31px; font-weight:600;">Love Across India</h1>
+            <h2 style="font-size: 22px; line-height: 26px; font-weight: 500; color: #00572D;">Now Launching In Over 10
+                Countries</h2>
+            <div class="slider-client pt-3">
+                <div class="slick-list">
+                    <div class="slick-track">
+                        <div class="slide text-center">
+                            <div class="slide-img">
+                                <img src="https://lapinoz.ca/assets/wla_new/lapinoz/ca/images/india.jpg"
+                                    alt="lapinoz pizza India" width="200" height="200">
+                            </div>
+                            <h5>India</h5>
+                        </div>
+                        <div class="slide text-center">
+                            <div class="slide-img">
+                                <img src="https://lapinoz.ca/assets/wla_new/lapinoz/ca/images/uk.jpg"
+                                    alt="lapinoz pizza United Kingdom" width="200" height="200">
+                            </div>
+                            <h5>UK</h5>
+                        </div>
+                        <div class="slide text-center">
+                            <div class="slide-img">
+                                <img src="https://lapinoz.ca/assets/wla_new/lapinoz/ca/images/canada.jpg"
+                                    alt="lapinoz pizza Canada" width="200" height="200">
+                            </div>
+                            <h5>Canada</h5>
+                        </div>
+                        <div class="slide text-center">
+                            <div class="slide-img">
+                                <img src="https://lapinoz.ca/assets/wla_new/lapinoz/ca/images/australia.jpg"
+                                    alt="lapinoz pizza Australia" width="200" height="200">
+                            </div>
+                            <h5>Australia</h5>
+                        </div>
+                        <div class="slide text-center">
+                            <div class="slide-img">
+                                <img src="https://lapinoz.ca/assets/wla_new/lapinoz/ca/images/dubai.jpg"
+                                    alt="lapinoz pizza Dubai" width="200" height="200">
+                            </div>
+                            <h5>Dubai</h5>
+                        </div>
+                        <div class="slide text-center">
+                            <div class="slide-img">
+                                <img src="https://lapinoz.ca/assets/wla_new/lapinoz/ca/images/tanzania.jpg"
+                                    alt="lapinoz pizza Dubai" width="200" height="200">
+                            </div>
+                            <h5>Tanzania</h5>
+                        </div>
+                        <div class="slide text-center">
+                            <div class="slide-img">
+                                <img src="https://lapinoz.ca/assets/wla_new/lapinoz/ca/images/usa.jpg"
+                                    alt="lapinoz pizza Dubai" width="200" height="200">
+                            </div>
+                            <h5>USA</h5>
+                        </div>
+                        <div class="slide text-center">
+                            <div class="slide-img">
+                                <img src="https://lapinoz.ca/assets/wla_new/lapinoz/ca/images/thailand.jpg"
+                                    alt="lapinoz pizza Dubai" width="200" height="200">
+                            </div>
+                            <h5>Thailand</h5>
+                        </div>
+                        <div class="slide text-center">
+                            <div class="slide-img" id="nepal-flag">
+                                <img src="https://lapinoz.ca/assets/wla_new/lapinoz/ca/images/nepal.jpg"
+                                    alt="lapinoz pizza Dubai" width="200" height="200">
+                            </div>
+                            <h5>Nepal</h5>
+                        </div>
+                        <div class="slide text-center">
+                            <div class="slide-img">
+                                <img src="https://lapinoz.ca/assets/wla_new/lapinoz/ca/images/switzerland.jpg"
+                                    alt="lapinoz pizza Dubai" width="200" height="200">
+                            </div>
+                            <h5>Switzerland</h5>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <!--Quality Assured-->
+
+        <div class="quality">
+            <div>
+                <h2>Quality Assured</h2>
+            </div>
+            
+        </div>
+
+        <div class="quality-info-wrapper">
+            <div class="quality-info">
+
+                <div class="quality-box">
+                    <img src="https://lapinoz.ca/assets/wla_new/lapinoz/ca/images/ingrediants.svg" alt="ingrediants">
+                    <h3>Finest Ingredients</h3>
+                    <p>Made from the finest quality ingredients, to <br>
+                        give you an authentic Italian taste, every single <br>
+                        time.</p>
+                </div>
+                <div class="quality-box">
+                    <img src="https://lapinoz.ca/assets/wla_new/lapinoz/ca/images/fresh-dough.svg" alt="fresh-dough">
+                    <h3>Fresh Dough</h3>
+                    <p>Our pizza dough is mixed on demand, so that<br>
+                        pizza served to you is always hot and fresh.</p>
+                </div>
+                <div class="quality-box" style="border-right: none;">
+                    <img src="https://lapinoz.ca/assets/wla_new/lapinoz/ca/images/safety-and-quality.svg"
+                        alt="safety-and-quality">
+                    <h3>Safety-and-Quality Standards</h3>
+                    <p>Our kitchens follow the highest safety and <br>
+                        quality standards, which are fully compliant <br>
+                        with fssai guidelines.</p>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Explore -->
+        
+        <div class="explore">
+            <h1>Explore</h1>
+            <div class="products" >
+                <div class="variety" style="padding-bottom: 10px;">
+                    <img src="./assests/image-592811-1715424060.png" alt="sides">
+                    <h3>Sides</h3>
+                </div>
+                <div class="variety">
+                    <img src="./assests/image-128695-1686856721.png" alt="Desert&Beverage">
+                    <h3>Desert & Beverages</h3>
+                </div>
+                <div class="variety" style="padding-bottom: 10px;">
+                    <img src="./assests/image-838513-1701755987.png" alt="Flatout">
+                    <h3>Flat Out</h3>
+                </div>
+                <div class="variety">
+                    <img src="./assests/image-394988-1686851905.png" alt="Bogo">
+                    <h3>Bogo</h3>
+                </div>
+                <div class="variety">
+                    <img src="./assests/image-814654-1715424611.png" alt="Veg Pizza">
+                    <h3>Veg Pizza</h3>
+                </div>
+                <div class="variety">
+                    <img src="./assests/image-342663-1715424500.png" alt="Nonveg Pizza">
+                    <h3>Non-veg Pizza</h3>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- sellings -->
+
+        <div class="pizza-section swiper">
+            <div class="slide-container">
+              <div class="card-wrapper swiper-wrapper">
+                <div class="card swiper-slide">
+                  <div class="image-box one">
+                    <img src="./assests/veg.jpg" class="veg-sign" alt="Veg Sign">
+                  </div>
+                  <div class="item-details">
+                   <h3><i class="fa-solid fa-star"></i>Recommended</h3>
+                   <div class="item-name">
+                    <h3>Farm Villa Pizza</h3>
+                    <p>The freshness of capsicum, tomatoes...</p>
+                   </div>
+                  </div>
+                </div>
+                <!-- 2 -->
+                <div class="card swiper-slide">
+                  <div class="image-box two">
+                    <img src="./assests/veg.jpg" class="veg-sign" alt="Veg Sign">
+                  </div>
+                  <div class="item-details">
+                   <h3><i class="fa-solid fa-star"></i>Recommended</h3>
+                   <div class="item-name">
+                    <h3>Farm Villa Pizza</h3>
+                    <p>The freshness of capsicum, tomatoes...</p>
+                   </div>
+                  </div>
+                </div>
+                <!-- 3 -->
+                <div class="card swiper-slide">
+                  <div class="image-box three">
+                    <img src="./assests/veg.jpg" class="veg-sign" alt="Veg Sign">
+
+                  </div>
+                  <div class="item-details">
+                   <h3><i class="fa-solid fa-star"></i>Recommended</h3>
+                   <div class="item-name">
+                    <h3>Farm Villa Pizza</h3>
+                    <p>The freshness of capsicum, tomatoes...</p>
+                   </div>
+                  </div>
+                </div>
+                <!-- 4 -->
+                <div class="card swiper-slide">
+                  <div class="image-box four">
+                    <img src="./assests/veg.jpg" class="veg-sign" alt="Veg Sign">
+
+                  </div>
+                  <div class="item-details">
+                   <h3><i class="fa-solid fa-star"></i>Recommended</h3>
+                   <div class="item-name">
+                    <h3>Farm Villa Pizza</h3>
+                    <p>The freshness of capsicum, tomatoes...</p>
+                   </div>
+                  </div>
+                </div>
+                <!-- 5 -->
+                <div class="card swiper-slide">
+                  <div class="image-box five">
+                    <img src="./assests/veg.jpg" class="veg-sign" alt="Veg Sign">
+
+                  </div>
+                  <div class="item-details">
+                   <h3><i class="fa-solid fa-star"></i>Recommended</h3>
+                   <div class="item-name">
+                    <h3>Farm Villa Pizza</h3>
+                    <p>The freshness of capsicum, tomatoes...</p>
+                   </div>
+                  </div>
+                </div>
+                <!-- 6 -->
+                <div class="card swiper-slide">
+                  <div class="image-box six">
+                    <img src="./assests/veg.jpg" class="veg-sign" alt="Veg Sign">
+                  </div>
+                  <div class="item-details">
+                   <h3><i class="fa-solid fa-star"></i>Recommended</h3>
+                   <div class="item-name">
+                    <h3>Farm Villa Pizza</h3>
+                    <p>The freshness of capsicum, tomatoes...</p>
+                   </div>
+                  </div>
+                </div>
+                
+                
+              </div>
+            </div>
+            <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-pagination"></div>
+          </div>
+
+
+          <!-- new Launched Stores -->
+
+          <div class="pizza-section swiper" style="background-color: #fff;">
+            <div class="slide-container ">
+              <div class="card-wrapper swiper-wrapper">
+                <div class="card swiper-slide">
+                    <div class="contact-card">
+
+                    <div class="destination">
+                        <h1>Nainital</h1>
+                        <p>
+                            Haldwani
+                        </p>
+                    </div>
+
+                    <div class="bottom-contact-card green">
+                        <img src="https://www.uengage.in/images/addo/logos/logo-5-1600769708.png" alt="Lapinoz Logo Icon" class="lapinoz-logo-icon">
+                        <p>La Pino'z Pizza</p>
+                    </div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="card swiper-slide">
+                    <div class="contact-card">
+
+                    <div class="destination">
+                        <h1>MalakPet</h1>
+                        <p>
+                            Hyderabad
+                        </p>
+                    </div>
+
+                    <div class="bottom-contact-card red">
+                        <img src="https://www.uengage.in/images/addo/logos/logo-5-1600769708.png" alt="Lapinoz Logo Icon" class="lapinoz-logo-icon">
+                        <p>La Pino'z Pizza</p>
+                    </div>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="card swiper-slide">
+                    <div class="contact-card">
+
+                    <div class="destination">
+                        <h1>Pushraj Chouraha</h1>
+                        <p>
+                            Ayodhya
+                        </p>
+                    </div>
+
+                    <div class="bottom-contact-card yellow">
+                        <img src="https://www.uengage.in/images/addo/logos/logo-5-1600769708.png" alt="Lapinoz Logo Icon" class="lapinoz-logo-icon">
+                        <p>La Pino'z Pizza</p>
+                    </div>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="card swiper-slide">
+                    <div class="contact-card">
+
+                    <div class="destination">
+                        <h1>Dongari Road virar
+                            west
+                        </h1>
+                        <p>
+                            Mumbai
+                        </p>
+                    </div>
+
+                    <div class="bottom-contact-card green">
+                        <img src="https://www.uengage.in/images/addo/logos/logo-5-1600769708.png" alt="Lapinoz Logo Icon" class="lapinoz-logo-icon">
+                        <p>La Pino'z Pizza</p>
+                    </div>
+                    </div>
+                </div>
+                <!-- 5 -->
+                <div class="card swiper-slide">
+                    <div class="contact-card">
+
+                    <div class="destination">
+                        <h1>Halol Harni Road</h1>
+                        <p>
+                            Halol
+                        </p>
+                    </div>
+
+                    <div class="bottom-contact-card red">
+                        <img src="https://www.uengage.in/images/addo/logos/logo-5-1600769708.png" alt="Lapinoz Logo Icon" class="lapinoz-logo-icon">
+                        <p>La Pino'z Pizza</p>
+                    </div>
+                    </div>
+                </div>
+                <!-- 6 -->
+                <div class="card swiper-slide">
+                    <div class="contact-card">
+
+                    <div class="destination">
+                        <h1>Civil Line</h1>
+                        <p>
+                            Azamgarh
+                        </p>
+                    </div>
+
+                    <div class="bottom-contact-card yellow">
+                        <img src="https://www.uengage.in/images/addo/logos/logo-5-1600769708.png" alt="Lapinoz Logo Icon" class="lapinoz-logo-icon">
+                        <p>La Pino'z Pizza</p>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- 7 -->
+
+                <div class="card swiper-slide">
+                    <div class="contact-card">
+
+                    <div class="destination">
+                        <h1>Carmelaram</h1>
+                        <p>
+                            Bengaluru
+                        </p>
+                    </div>
+
+                    <div class="bottom-contact-card green">
+                        <img src="https://www.uengage.in/images/addo/logos/logo-5-1600769708.png" alt="Lapinoz Logo Icon" class="lapinoz-logo-icon">
+                        <p>La Pino'z Pizza</p>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- 8 -->
+
+                <div class="card swiper-slide">
+                    <div class="contact-card">
+
+                    <div class="destination">
+                        <h1>J P Nagar</h1>
+                        <p>
+                            Bengaluru
+                        </p>
+                    </div>
+
+                    <div class="bottom-contact-card red">
+                        <img src="https://www.uengage.in/images/addo/logos/logo-5-1600769708.png" alt="Lapinoz Logo Icon" class="lapinoz-logo-icon">
+                        <p>La Pino'z Pizza</p>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- 9 -->
+
+                <div class="card swiper-slide">
+                    <div class="contact-card">
+
+                    <div class="destination">
+                        <h1>Opposite Hathi Gate</h1>
+                        <p>
+                            Dwarka Gujrat
+                        </p>
+                    </div>
+
+                    <div class="bottom-contact-card yellow">
+                        <img src="https://www.uengage.in/images/addo/logos/logo-5-1600769708.png" alt="Lapinoz Logo Icon" class="lapinoz-logo-icon">
+                        <p>La Pino'z Pizza</p>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- 10 -->
+
+                <div class="card swiper-slide">
+                    <div class="contact-card">
+
+                    <div class="destination">
+                        <h1>Red Square Market</h1>
+                        <p>
+                            Hisar
+                        </p>
+                    </div>
+
+                    <div class="bottom-contact-card green">
+                        <img src="https://www.uengage.in/images/addo/logos/logo-5-1600769708.png" alt="Lapinoz Logo Icon" class="lapinoz-logo-icon">
+                        <p>La Pino'z Pizza</p>
+                    </div>
+                    </div>
+                </div>
+                
+                
+              </div>
+            </div>
+            <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-pagination"></div>
+          </div>
+
+          <!-- Card Section End -->
+
+              <!-- enquiry -->
+    <div class="enquiry">
+        <img src="https://lapinozpizza.in/assets/wla_new/lapinoz/img/Franchise-web.png" alt="enquiry-banner" class="hide">
+        <img src="	https://lapinozpizza.in/assets/wla_new/lapinoz/img/Franchise-mobile.png" alt="" id="res-images">
+    </div>
+
+    <!-- Testimonials Section -->
+    <section class="common-spacing testimonials-sec"
+        style="background-image: url(./testimonial-banner.jpg);background-position: center; background-size: cover;">
+        <div class="container">
+            <h2>Happy Customers Around the Globe</h2>
+            <h1>More than 8 Million Users Served Till Date</h1>
+            <div class="bottom-dots clearfix d-flex justify-content-center mb-2 mb-md-4">
+                <span class="dot line-dot" style="border-color: #fff"></span>
+                <span class="dot" style="border-color: #fff;"></span>
+                <span class="dot" style="border-color: #fff;"></span>
+                <span class="dot" style="border-color: #fff;"></span>
+            </div>
+
+            <div class="quotes">
+                <div class="bubble common-para">
+                    <img src="https://lapinoz.ca/assets/wla_new/lapinoz/ca/images/quotetestimonial.png" alt="Comma">
+                    <blockquote>
+                        I was blown away by the flavors, the pizzas were amazing. Can't wait to order again. Highly
+                        recommended. Tastiest dinner I've had since pandemic happened.
+                    </blockquote>
+                    <div></div>
+                    <cite><i>Shreya Thakur</i></cite>
+                </div>
+                <div class="bubble common-para">
+                    <img src="https://lapinoz.ca/assets/wla_new/lapinoz/ca/images/quotetestimonial.png" alt="Comma">
+                    <blockquote>
+                        Wow! Lapino’z is hands down the BEST pizza place in town. From the fast delivery service to all
+                        the types of pizza, pasta, and garlic bread your heart desires.
+                    </blockquote>
+                    <div></div>
+                    <cite><i>Sahil Sood</i></cite>
+                </div>
+                <div class="bubble common-para">
+                    <img src="https://lapinoz.ca/assets/wla_new/lapinoz/ca/images/quotetestimonial.png" alt="Comma">
+                    <blockquote>
+                        Where do I start. I don't usually do reviews of restaurants but I feel that this place really
+                        deserves one. They have a wide range of menu options on BOGO offer. We chose to try 2 different
+                        Pizzas, and wow. 10/10 and would recommend everyone to order from this place at least once.
+                    </blockquote>
+                    <div></div>
+                    <cite><i>Rahul Singla</i></cite>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+
+    <div class="footer-container">
+        <div class="footer">
+            <h3 class="common-heading">FIND LA PINO'Z LOCATION NEAR YOU</h3>
+            <div class="alphabets">
+                <div class="city-name">
+                    <p>A</p>
+                </div>
+                <ul class="cities">
+                    <li>Abohar</li>
+                    <li>Agra</li>
+                    <li>Ahmedabad</li>
+                    <li>Ajmer</li>
+                    <li>Alwar</li>
+                    <li>Ambala</li>
+                    <li>Amreli</li>
+                    <li>Amritsar</li>
+                    <li>Anand</li>
+                    <li>Ankleshwar</li>
+                    <li>Aurangabad</li>
+                    <li>Ayodhya</li>
+                    <li>Azamgarh</li>
+                </ul>
+            </div>
+            <!-- B -->
+            <div class="alphabets">
+                <div class="city-name">
+                    <p>B</p>
+                </div>
+                <ul class="cities">
+                    <li>Baddi</li>
+                    <li>Bahadurgarh</li>
+                    <li>Barabanki</li>
+                    <li>Bareilly</li>
+                    <li>Basti</li>
+                    <li>Batala</li>
+                    <li>Bathinda</li>
+                    <li>Beawar</li>
+                    <li>Bengaluru</li>
+                    <li>Bettiah</li>
+                    <li>Bhagalpur</li>
+                    <li>Bharuch</li>
+                    <li>Bhavnagar</li>
+                    <li>Bhilai</li>
+                    <li>Bhilwara</li>
+                    <li>Bhopal</li>
+                    <li>Bhubaneswar</li>
+                    <li>Bhuj</li>
+                    <li>Bikaner</li>
+                    <li>Bilimora</li>
+                    <li>Bokaro</li>
+                    <li>Borsad</li>
+                    <li>Botad</li>
+                    <li>Budaun</li>
+                </ul>
+            </div>
+            <!-- C -->
+            <div class="alphabets">
+                <div class="city-name">
+                    <p>C</p>
+                </div>
+                <ul class="cities">
+                    <li>Chandigarh</li>
+                    <li>Chennai</li>
+                    <li>Chikhli</li>
+
+                </ul>
+            </div>
+            <!-- D -->
+
+            <div class="alphabets">
+                <div class="city-name">
+                    <p>D</p>
+                </div>
+                <ul class="cities">
+                    <li>Dahod</li>
+                    <li>Daman</li>
+                    <li>Dang</li>
+                    <li>Deesa</li>
+                    <li>Dehradun</li>
+                    <li>Dehri</li>
+                    <li>Delhi</li>
+                    <li>Deoria</li>
+                    <li>Derabassi</li>
+                    <li>DHARAMSHALA</li>
+                    <li>Durgapur</li>
+                    <li>Dwarka Gujarat</li>
+                </ul>
+            </div>
+
+            <!-- F -->
+
+            <div class="alphabets">
+                <div class="city-name">
+                    <p>F</p>
+                </div>
+                <ul class="cities">
+                    <li>Faridabad</li>
+                    <li>Fatehgarh Sahib</li>
+                    <li>Firozpur</li>
+                </ul>
+            </div>
+
+            <!-- G -->
+            <div class="alphabets">
+                <div class="city-name">
+                    <p>G</p>
+                </div>
+                <ul class="cities">
+                    <li>Gandhidham</li>
+                    <li>Gandhinagar</li>
+                    <li>Gangtok</li>
+                    <li>Gaya</li>
+                    <li>Ghaziabad</li>
+                    <li>Goa</li>
+                    <li>Godhra</li>
+                    <li>Gonda</li>
+                    <li>Gondal</li>
+                    <li>Gondia</li>
+                    <li>Gorakhpur</li>
+                    <li>Greater Noida</li>
+                    <li>Guntur</li>
+                    <li>Gurgaon</li>
+                    <li>Guwahati</li>
+                    <li>Gwalior</li>
+                </ul>
+            </div>
+            <!-- H -->
+
+            <div class="alphabets">
+                <div class="city-name">
+                    <p>H</p>
+                </div>
+                <ul class="cities">
+                    <li>Haldwani</li>
+                    <li>Halol</li>
+                    <li>Halvad</li>
+                    <li>Himatnagar</li>
+                    <li>Hisar</li>
+                    <li>Hoshiarpur</li>
+                    <li>Howrah</li>
+                    <li>Hyderabad</li>
+                </ul>
+            </div>
+
+            <!-- I -->
+
+            <div class="alphabets">
+                <div class="city-name">
+                    <p>I</p>
+                </div>
+                <ul class="cities">
+                    <li>Indore</li>
+                </ul>
+            </div>
+
+            <!-- J -->
+
+            <div class="alphabets">
+                <div class="city-name">
+                    <p>J</p>
+                </div>
+                <ul class="cities">
+                    <li>Jabalpur</li>
+                    <li>Jagraon</li>
+                    <li>Jaipur</li>
+                    <li>Jalandhar</li>
+                    <li>Jalgaon</li>
+                    <li>Jammu</li>
+                    <li>Jamnagar</li>
+                    <li>Jamshedpur</li>
+                    <li>Jassur</li>
+                    <li>Jaunpur</li>
+                    <li>Jhansi</li>
+                    <li>Jodhpur</li>
+                    <li>Junagadh</li>
+                </ul>
+            </div>
+
+            <!-- K -->
+
+            <div class="alphabets">
+                <div class="city-name">
+                    <p>K</p>
+                </div>
+                <ul class="cities">
+                    <li>Kakinada</li>
+                    <li>kandeli</li>
+                    <li>Kanpur</li>
+                    <li>Karnal</li>
+                    <li>Kasol</li>
+                    <li>Kathua</li>
+                    <li>Kevadiya</li>
+                    <li>Khanna</li>
+                    <li>Kishangarh</li>
+                    <li>Kochi</li>
+                    <li>Kolkata</li>
+                    <li>Kollam</li>
+                    <li>Kota</li>
+                    <li>Kurali</li>
+                </ul>
+            </div>
+
+            <!-- L -->
+
+            <div class="alphabets">
+                <div class="city-name">
+                    <p>L</p>
+                </div>
+                <ul class="cities">
+                    <li>Lucknow</li>
+                    <li>Ludhiana</li>
+                </ul>
+            </div>
+            <!-- M -->
+            <div class="alphabets">
+                <div class="city-name">
+                    <p>M</p>
+                </div>
+                <ul class="cities">
+                    <li>Maharajganj</li>
+                    <li>Malout</li>
+                    <li>Manali</li>
+                    <li>Mandi</li>
+                    <li>Mandi Gobindgarh</li>
+                    <li>Mangalore</li>
+                    <li>Meerut</li>
+                    <li>Mehsana</li>
+                    <li>Mhow</li>
+                    <li>Modasa</li>
+                    <li>Moga</li>
+                    <li>Mohali</li>
+                    <li>Moradabad</li>
+                    <li>Morbi</li>
+                    <li>Mount Abu</li>
+                    <li>Muktsar</li>
+                    <li>Mumbai</li>
+                    <li>Muzaffarpur</li>
+                </ul>
+            </div>
+            <!-- N -->
+            <div class="alphabets">
+                <div class="city-name">
+                    <p>N</p>
+                </div>
+                <ul class="cities">
+                    <li>Nabha</li>
+                    <li>Nadiad</li>
+                    <li>Nagpur</li>
+                    <li>Nashik</li>
+                    <li>Nathdwara</li>
+                    <li>Navi Mumbai</li>
+                    <li>Navsari</li>
+                    <li>Nawanshahr</li>
+                    <li>Noida</li>
+                </ul>
+            </div>
+
+            <!-- P -->
+
+            <div class="alphabets">
+                <div class="city-name">
+                    <p>P</p>
+                </div>
+                <ul class="cities">
+                    <li>Palanpur</li>
+                    <li>Pali</li>
+                    <li>Panchkula</li>
+                    <li>Panipat</li>
+                    <li>Patan</li>
+                    <li>Pathankot</li>
+                    <li>Patiala</li>
+                    <li>Patna</li>
+                    <li>perambalur</li>
+                    <li>Petlad</li>
+                    <li>Porbandar</li>
+                    <li>Prayagraj</li>
+                    <li>Puducherry</li>
+                    <li>Pune</li>
+                </ul>
+            </div>
+
+            <!-- R -->
+
+            <div class="alphabets">
+                <div class="city-name">
+                    <p>R</p>
+                </div>
+                <ul class="cities">
+                    <li>Raebareli</li>
+                    <li>Raipur</li>
+                    <li>Rajkot</li>
+                    <li>Rajpura</li>
+                    <li>Ranaghat</li>
+                    <li>Ranchi</li>
+                    <li>Ratlam</li>
+                    <li>Rewa</li>
+                    <li>Rourkela</li>
+                    <li>Rudrapur</li>
+                </ul>
+            </div>
+
+            <!-- S -->
+
+            <div class="alphabets">
+                <div class="city-name">
+                    <p>S</p>
+                </div>
+                <ul class="cities">
+                    <li>Sagar</li>
+                    <li>Saharanpur</li>
+                    <li>Sangrur</li>
+                    <li>Sasaram</li>
+                    <li>Satna</li>
+                    <li>Secunderabad</li>
+                    <li>Shirdi</li>
+                    <li>Sikar</li>
+                    <li>Siliguri</li>
+                    <li>Silvassa</li>
+                    <li>Singrauli</li>
+                    <li>Sirhind</li>
+                    <li>Sirsi</li>
+                    <li>Sitapur</li>
+                    <li>Solan</li>
+                    <li>Solapur</li>
+                    <li>Sultanpur</li>
+                    <li>Surat</li>
+                    <li>Surendranagar</li>
+
+                </ul>
+            </div>
+
+            <!-- T -->
+            <div class="alphabets">
+                <div class="city-name">
+                    <p>T</p>
+                </div>
+                <ul class="cities">
+                    <li>Tarn Taran</li>
+                    <li>Thane</li>
+                    <li>Tumakuru</li>
+
+                </ul>
+            </div>
+            <!-- U -->
+            <div class="alphabets">
+                <div class="city-name">
+                    <p>U</p>
+                </div>
+                <ul class="cities">
+                    <li>Udaipur</li>
+                    <li>Ujjain</li>
+                    <li>Una</li>
+                    <li>Upleta</li>
+
+                </ul>
+            </div>
+
+
+            <!-- V -->
+            <div class="alphabets">
+                <div class="city-name">
+                    <p>V</p>
+                </div>
+                <ul class="cities">
+                    <li>Vadodara</li>
+                    <li>Valsad</li>
+                    <li>Vapi</li>
+                    <li>Varanasi</li>
+                    <li>Veraval</li>
+                    <li>Vijayawada</li>
+                    <li>Vyara</li>
+
+                </ul>
+            </div>
+
+            <!-- Y -->
+            <div class="alphabets">
+                <div class="city-name">
+                    <p>Y</p>
+                </div>
+                <ul class="cities">
+                    <li>Yamuna Nagar</li>
+                </ul>
+            </div>
+
+            <!-- Z -->
+            <div class="alphabets">
+                <div class="city-name">
+                    <p>Z</p>
+                </div>
+                <ul class="cities">
+                    <li>Zirakpur</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer -middle -->
+
+        <div class="contact-section">
+            <ul>
+                <li>
+                    <h3>Useful Links</h3>
+                </li>
+                <li class="border-line"></li>
+                <li>
+                    Shipping Policy
+                </li>
+                <li>
+                    Refund Policy
+                </li>
+                <li>
+                    Terms &amp; Conditions
+                </li>
+                <li>
+                    Privacy Policy
+                </li>
+                <li>
+                    Promo Codes
+                </li>
+
+            </ul>
+
+            <ul>
+                <li>
+                    <h3>Payment Methods</h3>
+                </li>
+                <li class="border-line"></li>
+
+                <li>
+                    <img src="https://lapinozpizza.in/assets/wla_new/img/footer/cash-svg.svg" width="50" height="30"
+                        alt="cash icon" loading="lazy">
+
+                    <img src="https://lapinozpizza.in/assets/wla_new/img/footer/mastercard-svg.svg" width="50"
+                    height="30" alt="Master Card" loading="lazy">
+
+                    <img src="https://lapinozpizza.in/assets/wla_new/img/footer/gpay-svg.svg" width="50" height="30" alt="Google Pay" loading="lazy">
+
+                    <br>
+                    
+                    <img src="https://lapinozpizza.in/assets/wla_new/img/footer/paytm-svg.svg" width="50" height="30"alt="Paytm" loading="lazy">
+
+                    <img src="https://lapinozpizza.in/assets/wla_new/img/footer/visa-svg.svg" width="50" height="30"
+                        alt="Visa" loading="lazy">
+
+                    <img src="https://lapinozpizza.in/assets/wla_new/img/footer/upi-icon.svg" width="50" height="30"
+                        alt="UPI" loading="lazy">
+
+                </li>
+            </ul>
+
+            <ul>
+                <li><h3>Contact Us</h3></li>
+                <li class="border-line"></li>
+
+                <li style="font-size: 14px; font-weight: 400;">Customer Support:</li>
+                <li><i class="fa-regular fa-envelope"></i>support@lappinozpizza.in</li>
+                <li style="font-size: 14px; font-weight: 400;">Franchise Enquiry:</li>
+                <li><i class="fa-regular fa-envelope"></i>info@lapinozpizza.in</li>
+            </ul>
+
+            <ul>
+                <li><h3>Follow Us</h3></li>
+                <li class="border-line"></li>
+
+                <li class="social-footer">
+                    <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-pinterest"></i>
+                <i class="fa-brands fa-twitter"></i>
+                </li>
+                
+            </ul>
+        </div>
+
+        <div class="bottom-section">
+            <h1>Powered By <img src="https://www.uengage.in/assets/uen/img/ue-logo-2022.jpg" alt=""></h1>
+            <p><img src="https://lapinozpizza.in/assets/wla_new/img/footer/copyright-icon.svg" alt="copyright-icon"> Copyright. All Rights Reserved</p>
+        </div>
+    </div>   
+    <div class="download-button">
+        <button>Download App</button>
+    </div> 
+
+<!-- main-container end--> 
+    </div>
+ <!-- jQuery -->
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="script.js"></script>
+     <!-- I have already linked to swiper js file -->
+     <script src="js/swiper-bundle.min.js"></script>
+     <script src="js/script.js"></script>
+
+</body>
+
+</html>

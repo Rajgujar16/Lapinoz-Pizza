@@ -1,0 +1,122 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  
+}
+
+.pizza-section{
+  width: 100%;
+  padding: 40px 0;
+  background-color: #F2F2F2 ;
+}
+
+.slide-container{
+    margin: 0 30px;
+  overflow: hidden;
+}
+
+.card{
+  background: #fff;
+  /* width: 300px; */
+  border-radius: 8px;
+  position: relative;
+
+
+}
+
+
+.card .image-box{
+height: 250px;
+width: 100%;
+background-position: center;
+background-size: 100%;
+border-radius: 8px 8px 0px 0px;
+transition: background-size 0.5s ease;
+position: relative;
+background-color: rgba(0, 0, 0, 0.404); /* Blackish tone with transparency */
+}
+
+
+.one{
+  background-image: url(https://static.uengage.in/uploads/5/image-711224-1715596629.png);
+}
+
+.two{
+  background-image: url(https://static.uengage.in/uploads/5/image-916317-1715596630.png);
+}
+
+.three{
+  background-image: url(https://static.uengage.in/uploads/5/image-462226-1715686799.png);
+}
+
+.four{
+  background-image:url(https://static.uengage.in/uploads/5/image-183435-1715686808.png) ;
+}
+
+.five{
+  background-image: url(https://static.uengage.in/uploads/5/image-795561-1715596629.png);
+}
+.six{
+  background-image: url(https://static.uengage.in/uploads/5/image-9895-1654600609.jpg);
+}
+.veg-sign {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 15px; /* Adjust as needed */
+  height: 15px; /* Adjust as needed */
+}
+
+.image-box:hover{
+  background-size: 120%; /* Hover ke samay image ka size badhana */
+}
+
+.card .item-details{
+  display: flex;
+  flex-direction: column;
+  column-gap: 12px;
+  padding: 15px;
+}
+
+.card .item-details h3{
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 400px;
+  color: #00572d;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.item-details .item-name{
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.item-details .item-name p{
+  font-size: 12px;
+  font-weight: 400;
+  
+}
+
+.swiper-navBtn{
+  color: #000;
+  height: 40px;
+  width: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+  font-size: 18px;
+}
+
+.swiper-pagination-bullet {
+  background-color: #000;
+}
+
