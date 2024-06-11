@@ -44,31 +44,63 @@ $(document).ready(function(){
 });
 
 // Coupon card
-let currentIndex = 1; // Initializing currentIndex
-const slides = document.querySelector('.slides'); // Selecting slides container
-const totalSlides = document.querySelectorAll('.slide').length; // Getting total number of slides
+let currentIndex = 1;
+const coupons = document.querySelector('.coupons');
+const totalCoupons = document.querySelectorAll('.coupon').length;
 
-function showNextSlide() {
-    const slideWidth = document.querySelector('.slide').clientWidth + 10; // Slide width including gap
-    currentIndex++;
-    if (currentIndex >= totalSlides - 4) { // Adjusted to account for the visible slides and one duplicated slide
-        slides.style.transition = 'transform 0.5s ease-in-out'; // Adding transition
-        currentIndex = 1; // Resetting currentIndex
-        slides.style.transform = `translateX(-${currentIndex * slideWidth}px)`; // Moving to the first slide
+// Clone the first few coupons and append them to the end
+for (let i = 0; i < getVisibleCoupons(); i++) {
+    const clone = document.querySelectorAll('.coupon')[i].cloneNode(true);
+    coupons.appendChild(clone);
+}
+
+function getVisibleCoupons() {
+    const screenWidth = window.innerWidth;
+    if (screenWidth < 480) {
+        return 1;
+    } else if (screenWidth < 768) {
+        return 2;
+    } else if (screenWidth < 786) {
+        return 2; // 2.5 cards initially
     } else {
-        slides.style.transition = 'transform 0.5s ease-in-out'; // Adding transition
-        slides.style.transform = `translateX(-${currentIndex * slideWidth}px)`; // Moving to the next slide
+        return 2.5; // 2.5 cards initially
     }
 }
 
-setInterval(showNextSlide, 3000); // Automatically changing slide every 3 seconds
+function showNextCoupon() {
+    const visibleCoupons = getVisibleCoupons();
+    const couponWidth = document.querySelector('.coupon').clientWidth + 10; // Coupon width including gap
+    currentIndex++;
+    coupons.style.transition = 'transform 0.5s ease-in-out';
+    coupons.style.transform = `translateX(-${currentIndex * couponWidth}px)`;
 
-// Adjust the initial transform to show the first image correctly
-const initialSlideWidth = document.querySelector('.slide').clientWidth + 10; // Getting initial slide width
-slides.style.transform = `translateX(-${currentIndex * initialSlideWidth}px)`; // Setting initial transform
+    // Reset to the beginning without transition
+    if (currentIndex >= totalCoupons) {
+        setTimeout(() => {
+            coupons.style.transition = 'none';
+            currentIndex = 1;
+            coupons.style.transform = `translateX(-${currentIndex * couponWidth}px)`;
+        }, 500); // Match this delay to the transition duration
+    }
+}
+
+setInterval(showNextCoupon, 3000);
+
+function adjustInitialTransform() {
+    const visibleCoupons = getVisibleCoupons();
+    const initialCouponWidth = document.querySelector('.coupon').clientWidth + 10;
+    coupons.style.transform = `translateX(-${currentIndex * initialCouponWidth}px)`;
+}
+
+// Adjust the initial transform on load
+adjustInitialTransform();
+
+// Adjust the transform on window resize
+window.addEventListener('resize', adjustInitialTransform);
 
 
-// feedback
+
+// Testimonial
 
 $(document).ready(function(){
     $('.quotes').slick({

@@ -174,58 +174,65 @@
     border-radius: 0px 5px 5px 0px;
 }
 
-/* Coupon Container */
-.coupon-container {
-    width: 100%;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    background-color: #fff;
-    padding-block: 30px;
-}
-
-.coupon-container h2 {
-    font-size: 26px;
-    font-weight: 600;
-    padding-inline: 80px;
-    margin-bottom: 30px;
-}
-
 
 /* Carousel */
 
-.slider {
-    width: 100% !important;
-    max-width: 1200px !important;
-    overflow: hidden !important;
+.outer-container {
+    width: 100%; /* Adjust width as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-inline: 50px;
+    padding-block: 20px;
+}
+
+.coupon-heading{
+    width: 100%;
+    height: auto;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.coupon-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.coupons {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.coupon {
+    min-width: calc(100% / 2.5 - 10px); /* 2.5 cards initially */
+    margin-right: 10px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    height: 250px;
+    overflow: hidden; /* Ensure content does not overflow */
     border-radius: 10px !important;
-    position: relative !important;
 }
 
-.slides {
-    display: flex !important;
-    transition: transform 0.5s ease-in-out !important;
-    /* will-change: transform !important; */
+.coupon-image {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
-.slide {
-    flex: 0 0 calc(40% - 10px) !important; /* Each slide will take 40% of the container width minus the gap */
-    margin-right: 10px !important; /* Gap between slides */
-    box-sizing: border-box !important;
+.coupon-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
 }
-
-.slide img {
-    width: 100% !important;
-    display: block !important;
-    border-radius: 10px;
-}
-
-
-
 
 
 /* Story Section */
@@ -1033,14 +1040,17 @@ top: -25px;
         width: 40%;
     }
 
-    .coupon-container{
-        width: 100%;
-        height: auto;
+    .outer-container{
+        padding-inline: 20px;
+        padding-bottom: 0px;
     }
 
-    .coupon-container h2{
-        width: 100%;
-        padding-inline: 18px;
+    .coupon-heading{
+        margin-bottom: 10px;
+    }
+
+    .coupon {
+        min-width: calc(100% / 2 - 10px); /* 2 cards */
     }
 
     .story-section{
@@ -1160,6 +1170,19 @@ top: -25px;
         margin-bottom: 20px ;
     }
 
+    .outer-container{
+        padding-inline: 20px;
+        padding-bottom: 0px;
+    }
+
+    .coupon-heading{
+        margin-bottom: 10px;
+    }
+
+    .coupon {
+        min-width: calc(100% / 2 - 10px); /* 2 cards */
+        height: 120px;
+    }
     .story-section{
         width: 100%;
         height: auto;
